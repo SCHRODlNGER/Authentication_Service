@@ -25,7 +25,6 @@ public class CustomUserDetailsService implements UserDetailsService {
         System.out.println("User found with UserName: " + userInfo.getUsername() + " Password: " + userInfo.getPassword());
 
 
-
         return new User(userInfo.getUsername(), userInfo.getPassword(), List.of());
     }
 
